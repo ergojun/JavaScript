@@ -5,3 +5,6 @@ JavaScript study
 
 ## update in 20221123
 由于写中文还得切换输入法，太麻烦了，我决定用英文写注释了
+
+# 快捷键
+console.log( "" );     快捷键： clog
