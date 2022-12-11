@@ -37,4 +37,16 @@ console.log( f2(2) );           // 9
 console.log( f3(3) );           // 16
 
 //-------------------------------------------------------
+function Person() {
+    // this point to function person
+    this.age = 0;
+    setInterval(() => {
+        console.log( this === window );
+        this.age ++;
+    },10000);     // this 1000 is a time , ms
+}
+let p = new Person();
+setInterval (function() {
+    console.log( p.age );
+},1000);
 
