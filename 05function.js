@@ -27,6 +27,9 @@ const f2 = x => {
     return x*x;
 }
 
+const hello = () => { console.log( 'log' ); }
+hello();
+
 // equles the follow
 const f3 = function(x) {
     x++;

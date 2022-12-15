@@ -13,3 +13,5 @@ console.log( "" );     快捷键： clog
 invoke 调用
 parameter 参数 
 instanceof 实例
+
+[function](./05function.js)

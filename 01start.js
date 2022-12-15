@@ -84,3 +84,5 @@ let include_space_string = "   hello world   ";
 console.log( include_space_string.trim() );             // "hello world"
 console.log( include_space_string.trimStart() );        // "hello world   "
 console.log( include_space_string.trimEnd() );          // "   hello world"
+
+
