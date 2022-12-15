@@ -10,8 +10,8 @@ JavaScript study
 console.log( "" );     快捷键： clog
 
 # 英语对照
-invoke 调用
-parameter 参数 
+    invoke 调用
+    parameter 参数 
 instanceof 实例
 
 [function](./05function.js)
