@@ -8,6 +8,8 @@ JavaScript study
 
 # 快捷键
 console.log( "" );     快捷键： clog
+console.log(  );       快捷键： cclog
+document.writeln( '' );快捷键： docw
 
 # 英语对照
     invoke 调用
