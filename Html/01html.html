@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        在 <head> 里的元素
+        link: 用于链接图标，css样式文件等各种外部资源
+            href: 指定链接的来源
+            type: 指定链接的 MIME 类型
+            如：定义浏览器标签的图标 <link href="outer.ico" />
+                定义 css 文件 <link href="../java.css" />
+                定义预先加载的资源 <link href="base.html" />
+
+        base: 用于全局定义打开一个链接时是在哪个窗口打开，_blank, _parent, _self, _top
+            如: 
+                <head>
+                    <base target="_blank" href="https://www.bing.com" />
+                </head>
+                <body> 
+                    <a href="index.html">首页</a>
+                </body>
+                这时候点击 首页，就会跳转到  https://www.bing.com/index.html 中
+
+        mete: 定义页面元信息
+            charset: 指定该页面的字符集
+            content: 指定元信息的值
+            name: 指定元信息的名称
+            http-equiv: 指定元信息名称，这些名称的作用如下：
+                expiress: 指定网页过期时间，过期后，必须得重新在服务器上下载
+                pragma: 指定禁止浏览器在本地磁盘缓存中获取该页的内容，浏览器一旦离开该网页就无法脱机访问该网页
+                refresh: 指定浏览器多长时间后自动刷新指定页面
+                set-cookie: 设置 cookie ， 如果网页过期，那么客户端上的 cookie 也会被删除
+                content-type: 设置页面内容类型和所用的字符集
+            如：
+                <meta http-equiv="expires" content="Sat Sep 27 16:12:36 CST 2008" />
+                <meta http-equiv="pargma" content="no-cache" />
+                <meta http-equiv="refresh" content="2" />  2秒后自动刷新本页面，也可以指定，URL="https://bing.com"
+                <meta http-equiv="set-cookie" content="" />
+                <meta http-equiv="content-type" content="text/html"; charset=utf-8 />
+     -->
+    <!-- 可以省略标签结束标签 -->
+    <p>dasdasdas
+    <ol>dasdasda
+    <li>saaa
+
+    
+    <!-- 
+        <h1> 到 <h6> 定义标题一到标题六
+        <P> 定义段落
+        <br> 插入一个换行
+        <hr> 定义水平线
+        <div> 定义文档中的节
+        <span> 表示一段一般性文本
+     -->
+     <h1> title 1</h1>
+     <h2> title 2</h2>
+     <h3> title 3</h3>
+     <h4> title 4</h4>
+     <h5> title 5</h5>
+     <h6> title 6</h6>
+
+     <!-- ouput a line -->
+     <hr>
+     <!-- 3 span -->
+     <span>Tomcat</span><span>Jetty</span><span>Resion</span>
+     <!-- 3 p -->
+     <p>Tome<p>Jetty<p>Rsion
+     <hr>
+
+    <!-- 
+        <b> 粗体
+        <i> 斜体
+        <em> 强调
+        <strong> 和粗体差不多
+        <small> 小号字体
+        <sup> 上标文本
+        <bdo> 用于显示文本方向
+     -->
+     <span><b>overstriking</b></span>
+     <span><i>italic</i></span>
+     <span><em>stress</em></span>
+     <small><span>小号字体</span></small>
+     <div>5<sup>2</sup></sup></div>
+     <div>O<sub>2</sub></div>
+     <bdo dir="ltr">从左往右</bdo><br />
+     <bdo dir="rtl">从右往左</bdo>
+
+     <hr>
+     <!-- 
+        <abbr> 缩写
+        <address> 地址
+        <blockquote> 长引用
+        <q> 短引用
+        <cite> 作品名
+     -->
+     <abbr title="动力山大">缩写,把光标放到我面前</abbr>
+     <address>这个是地址：深圳市南山区</address>
+     <div><blockquote cite="记得旧时好">
+        长引用 <br>
+        记得旧时好 跟随爹爹去吃茶 门前磨螺壳 巷口弄泥沙 而今人长大 心事乱如麻<br>
+        记得旧时遥 喜看阿婆纺线纱 瓦凹泡新茧 院内惹雏鸭 而今人长大 心绪淡若茶<br>
+        记得旧时小 爱卷丫小衣襟角 檐底蹲蚁巢 树上共攀枣 而今人长大 心情恍比潮<br>
+        记得旧时淘 总嫌先生讲乖巧 车马混鱼龙 睁眼乐妖烧 而今人长大 心思飘成草<br>
+        记得旧时闹 偏要哥哥教捉虾 墙角挖青苔 梢头斗知了 而今人长大 心湖荡起潮<br>
+    </blockquote></div>
+    <p>这一行是自带引号的 <q>短引用</q></p>
+    <p>这一行是<cite> 作品名</cite></p>
+
+    <!-- 
+        <code> 代码块
+        <dfn> 专业术语
+        <del> 删除文本
+        <ins> 下划线文本
+        <samp> 示范文本
+        <kbd> 键盘文本，表示改文本是通过键盘输入的
+        <var> 变量。会以斜体的形式展示
+     -->
+     <code>
+        public class Cat<br>
+        {<br>
+            private int name = "DLSD"; <br>
+        }<br>
+     </code>
+     <p>这是一个专业术语：<dfn>动力山大</dfn></p>
+     <p>这是一个删除文本：<del>动力山大</del></p>
+     <p>这是一个下划线：<ins>动力山大</ins></p>
+     <samp>
+        这里面的内容都是 示范文本啊
+     </samp>
+     <p>后面命令是 kbd 标签，在命令行输入：<kbd>ls -lrt</kbd></p>
+     <q>变量: </q><var> i</var>
+
+     <hr>
+     <!-- 
+        a 标签
+            属性：
+                href：指定链接的资源
+                hreflang：指定链接的文档使用的语言
+                target：指定使用框架集来装载资源，包含 _self, _blank, _top, _parent;
+                download：指定一个下载链接，不是跳转
+      -->
+      <h2> a 标签 </h2>
+      <a href="https://bing.com"><b> bing, 默认 target 是 _self </b></a><br>
+      <a href="https://baidu.com" target="_self"> baidu target= _self</a><br>
+      <a href="https://baidu.com" target="_blank"> baidu target= _blank </a><br>
+      <a href="https://baidu.com" target="_top"> baidu target= _top</a><br>
+      <a href="https://baidu.com" target="_parent"> baidu target= _parent</a><br>
+      <a href="../image/暂无储存.png" download="下载文件名字">下载图片</a>
+
+    <hr>
+    <!-- 
+        列表
+        <ul> 无序列表
+        <ol> 有序列表
+            start：指定开始的数字
+            <li> 就是上面两个列表的项
+        <dl> 标题
+            <dt>    
+            <dd>
+     -->
+     <h3>无序列表</h3>
+     <ul>
+        <li>aadsd</li>
+        <li>adgdfg</li>
+     </ul>
+
+     <h3>反序列表</h3>
+     <ol reversed="true">
+        <li> first </li>
+        <li> second </li>
+        <li> treed </li>
+     </ol>
+
+     <h3>从 3 开始的列表</h3>
+     <ol start="3">
+        <li>aa</li>
+        <li>bb</li>
+        <li>cc</li>
+     </ol>
+
+     <h3>dl 列表，dt 定义，dd 解释</h3>
+     <dl>
+        <dt>Java</dt>
+        <dd> java 是一门语言 </dd>
+     </dl>
+
+     <hr>
+     <h2> img 图片</h2>
+     <!-- 
+        src: 图片源
+        alt: 看代码时才能看见 属于备注吧
+        hight: 高度
+        width: 宽度
+      -->
+    <img src="../image/404错误.png" height="500px" width="500px" alt=" 网页打不开,404">
+
+    <hr>
+    <h2> 表格 </h2>
+    <!-- 
+        <table> 定义表格
+        <caption> 表格标题，可写文本、图片、超链接
+        <tr> 行
+            <th> 表头单元格
+            <td> 单元格
+                属性：
+                    colspan: 合并列
+                    rowspan: 合并行
+                    height: 这个格子的高度
+                    width: 这个格子的长度
+
+        以下三个可以用来给表格分组：
+        <tbody> 表格主体
+        <thead> 表格头
+        <tfoot> 表格脚
+     -->
+    <table border="1">
+        <caption>cption是表标题</caption>
+        <thead>
+            <tr>
+                <th>123</th>
+                <th>456</th>
+                <th>th 表头 </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>td第一列</td>
+                <td>td第二列</td>
+                <td>td第三列</td>
+            </tr>
+            <tr>
+                <td colspan="2">合并两列</td>
+                <td> 第三列 </td>
+            </tr>
+            <tr>
+                <td rowspan="2">合并两行</td>
+                <td> 第2列 </td>
+                <td> 第3列 </td>
+            </tr>
+            <tr>
+                <td> 第2列 </td>
+                <td> 第3列 </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" style="text-align: center;">这个是 tfoot </td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+    <h2> 其他属性 </h2>
+    <!-- 
+        title: 
+        lang: 一般在头部设置，告诉浏览器和搜索引擎，网页中的元素用的语言；en：英语；zh：中文；ja：日语；
+        tabindex: 按下 tab 键时，选中区域跳转的顺序
+        contenteditable: 该组件下的元素均可在页面上编辑，如下面的表格
+        spellcheck: 在 input、textarea 组件里校验拼写是否有误
+     -->
+     <div>
+        <p title="这是用来备注的title ">我是一个文本，光标放我身上</p><br>
+        <div lang="en"> 这是英文的内容 </div>
+        <div>
+            <a href="https://bing.com" tabindex="1">第一个选中</a>
+            <a href="https://bing.com" tabindex="3">第三个选中</a>
+            <a href="https://bing.com" tabindex="2">第二个选中</a>
+        </div><br>
+        <div contenteditable="true" >
+            <table border="1">
+                <tr>
+                    <td>第一类</td>
+                    <td>第二类</td>
+                </tr>
+                <tr>
+                    <th>123</th>
+                    <th>456</th>
+                </tr>
+            </table>
+        </div><br>
+        <textarea spellcheck cols="30" rows="5"></textarea>
+     </div>
+
+     <hr>
+     <h2> aside element</h2>
+     <!-- 
+        aside: 文章的附属信息那种小框框
+        nav: 导航条
+        article: 文章元素
+        detail、sunmmary： 就是可缩进的
+      -->
+     <aside>
+        <h3> index </h3>
+        <nav>
+            <ul>
+                <li><a href="https://bing.com">bing</a></li>
+                <li><a href="https://baidu.com">baidu</a></li>
+            </ul>
+        </nav>
+     </aside><br>
+
+     <article>
+        <mark>HTML5</mark> is a stander langauge;
+     </article><br>
+     <details>
+        <summary>details element</summary>
+        芙蓉镇是一个很好的电影
+     </details>
+
+     <!-- 
+        wbr：自动换行符，假如一个单词太长了，加这个wbr就会在加的位置给你换行
+      -->
+      inter<wbr>nation<wbr>alzati<wbr>on
+
+</body>
+</html>
