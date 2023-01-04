@@ -15,5 +15,6 @@ document.writeln( '' );快捷键： docw
     invoke 调用
     parameter 参数 
 instanceof 实例
+element 元素
 
 [function](./05function.js)
